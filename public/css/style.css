@@ -1,0 +1,77 @@
+body {
+    background-color: aqua;
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 200vh;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.item span {
+    cursor: pointer;
+    margin:  0 7px;
+}
+
+.item {
+    margin: 10px auto;
+    width: 300px;
+    padding: 5px 20px;
+    border: 1px whitesmoke solid;
+    font-size: 12px;
+}
+
+.nome {
+    border: 0;    
+    font-size: 20px;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+button {
+    margin: 20px;
+}
+
+#alerta {
+    transition: all ease .8s;
+    opacity: 0;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    background-color: rgb(3, 110, 211);
+    font-size: 50px;
+    border-radius: 8px;
+    border: 1px solid rgb(0, 81, 255);
+    padding: 5px 10px;
+}
+
+input {
+    width: 100%;
+    padding: 4px;
+}
+
+form > div {
+    width: fit-content;
+    margin: auto;
+    border: 2px white solid;
+    padding: 20px;
+}
+
+button {
+    border:  0;
+    border-radius: 3px;
+    background-color: skyblue;
+    color: black;
+    padding: 3px 7px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
