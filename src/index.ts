@@ -4,11 +4,14 @@ import mustacheExpress from 'mustache-express'
 import dotenv from 'dotenv'
 import path from 'path'
 import router from './config/routes'
+import bodyParser from 'body-parser'
 const app = express() 
 
 //configura as variaveis de ambiente
 dotenv.config()
 app.use(cors())
+app.use(bodyParser.json())
+app.use(bodyParser.urlencoded({ extended: true }))
 
 // app.set('mustache', mustacheExpress())
 // app.set('view engine', 'mustache')
