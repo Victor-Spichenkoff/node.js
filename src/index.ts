@@ -5,6 +5,8 @@ import dotenv from 'dotenv'
 import path from 'path'
 import router from './config/routes'
 import bodyParser from 'body-parser'
+import { mongoConnect } from './database/mongo'
+import { getAllMongo } from './controllers/mongo.controller'
 const app = express() 
 
 //configura as variaveis de ambiente
@@ -17,6 +19,11 @@ app.use(bodyParser.urlencoded({ extended: true }))
 // app.set('view engine', 'mustache')
 // app.set('views', path.join(__dirname, 'views'))
 
+
+//Mongo:
+mongoConnect()
+
+getAllMongo()
 
 app.use(urlencoded({ extended: true }))
 
